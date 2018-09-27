@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ftc_app-4.0/libs/Blocks-release-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ftc_app-4.0/libs/RobotCore-release-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ftc_app-4.0/libs/Vuforia.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ftc_app-4.0/libs/Inspection-release-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ftc_app-4.0/libs/Hardware-release-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ftc_app-4.0/libs/FtcCommon-release-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
