@@ -60,10 +60,10 @@ public class DriverControl extends LinearOpMode {
     private DcMotor rightDrivef;
     private DcMotor leftDriveb;
     private DcMotor rightDriveb;
-    private DcMotor forklift;
+    /*private DcMotor forklift;
     private CRServo handLeft;
     private CRServo handRight;
-    private Servo sideArm;
+    private Servo sideArm;*/
 
     @Override
     public void runOpMode() {
@@ -77,10 +77,10 @@ public class DriverControl extends LinearOpMode {
         rightDrivef = hardwareMap.get(DcMotor.class, "right_drivef");
         leftDriveb  = hardwareMap.get(DcMotor.class, "left_driveb");
         rightDriveb = hardwareMap.get(DcMotor.class, "right_driveb");
-        forklift = hardwareMap.get(DcMotor.class, "forklift");
+        /*forklift = hardwareMap.get(DcMotor.class, "forklift");
         handLeft = hardwareMap.get(CRServo.class, "handLeft");
         handRight = hardwareMap.get(CRServo.class, "handRight");
-        sideArm = hardwareMap.get(Servo.class, "sideArm");
+        sideArm = hardwareMap.get(Servo.class, "sideArm");*/
 
         // Most robots need the motor on one side to be reversed to drive forward
         // Reverse the motor that runs backwards when connected directly to the battery
@@ -88,7 +88,7 @@ public class DriverControl extends LinearOpMode {
         rightDrivef.setDirection(DcMotor.Direction.FORWARD);
         leftDriveb.setDirection(DcMotor.Direction.REVERSE);
         rightDriveb.setDirection(DcMotor.Direction.FORWARD);
-        forklift.setDirection(DcMotor.Direction.FORWARD);
+        /*forklift.setDirection(DcMotor.Direction.FORWARD);*/
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -98,7 +98,7 @@ public class DriverControl extends LinearOpMode {
 
 
 
-            sideArm.setPosition(1);
+            //sideArm.setPosition(1);
 
 
 
@@ -132,36 +132,36 @@ public class DriverControl extends LinearOpMode {
 
             //Control the forklift
             if (gamepad2.dpad_up){
-                forklift.setPower(-0.6);
+                //forklift.setPower(-0.6);
             }
             else if (gamepad2.dpad_down){
-                forklift.setPower(0.6);
+                //forklift.setPower(0.6);
             }
             else{
-                forklift.setPower(0);
+                //forklift.setPower(0);
             }
 
             //Control the hand (servo)
             if(gamepad2.y){
                 //close
-                handLeft.setPower(0.6);
+                //handLeft.setPower(0.6);
             }
             else if (gamepad2.x){
                 //open
-                handLeft.setPower(-0.6);
+               // handLeft.setPower(-0.6);
             }
             else{
-                handLeft.setPower(0);
+                //handLeft.setPower(0);
             }
 
             if(gamepad2.b){
-                handRight.setPower(-0.6);
+                //handRight.setPower(-0.6);
             }
             else if (gamepad2.a){
-                handRight.setPower(0.6);
+                //handRight.setPower(0.6);
             }
             else{
-                handRight.setPower(0);
+                //handRight.setPower(0);
             }
 
         }
